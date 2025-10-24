@@ -44,6 +44,7 @@ struct ContentView: View {
             Image("bears")
                 .resizable()
                 .scaledToFit()
+                // current scale is controlled by pinching or tapping
                 .scaleEffect(currentScale)
                 .gesture(
                     /// pinching = magnifygestures
